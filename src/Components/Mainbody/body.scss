@@ -1,0 +1,187 @@
+@import '../../Sass/mixin';
+@import '../../Sass/variables';
+
+.body-container1{
+  width: 100%;
+  height: auto;
+  padding: .5rem 0rem ;
+  background-color: lightblue;
+  background-color: $bodyback;
+  &-content{
+    width: 75%;
+    height: auto;
+    padding: .5rem 0rem ;
+    margin: auto;
+    &>h1{
+        padding: 5rem 0rem;
+        color: $pink;
+        font-weight: 600;
+font-size: 40px;
+text-align: center;
+    }
+    &-gallery{
+        // background-color: lightgreen;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+  }
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &>img{
+        // width: 7.5%;
+        padding: 1.5rem 1.3rem;
+        border-radius: 12px;
+        background-color: $pink;
+    }
+    &>p{
+        color: $pink;
+        font-weight: 500;
+font-size: 30px;
+line-height: 45px;
+    }
+}
+
+
+.dildata-container{
+    width: 100%;
+    height: auto;
+    padding-top: 3rem;
+    background-color: $bodyback;
+    &-content{
+        width: 85%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 0rem;
+        // background-color: aqua;
+        &>p{
+            font-weight: 600;
+font-size: 44px;
+line-height: 75px;
+text-align: center;
+color: #434343;
+        }
+        &>span{
+            font-weight: 500;
+font-size: 25px;
+line-height: 45px;
+/* identical to box height */
+color: #F9556E;
+        }
+        &>img{
+            width: 5%;
+            margin-top: 4rem;
+        }
+    }
+}
+.imagegallery-container{
+    width: 100%;
+    height: auto;
+    padding: .5rem 0rem;
+    background-color: $bodyback;
+    &-content{
+        width: 95%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        // background-color: lightgreen;
+    }
+}
+
+.IGallery{
+    width: auto;
+    height: auto;
+    padding: .5rem 0rem;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    // background-color: lightblue;
+    &-photo{
+        width: 80%;
+        height: 25vh;
+        background-color: lightcoral;
+        border-radius: 50%;
+        &>img{
+            width: 100%;
+            height: 25vh;
+            border-radius: 50%;
+            filter: drop-shadow(0px 6px 13px rgba(249, 85, 110, 0.25));
+        }
+    }
+    &>p{
+        margin-top: 1.3rem;
+        font-weight: 600;
+font-size: 25px;
+line-height: 52px;
+/* identical to box height */
+text-align: center;
+color: #F9556E;
+    }
+}
+
+
+.card1-container{
+    width: 100%;
+    height: auto;
+    padding: .5rem 0rem;
+    background-color:$bodyback;
+    &-content{
+        width: 95%;
+        height: auto;
+        margin: auto;
+        padding: .5rem 0rem;
+        display: flex;
+        justify-content: space-between;
+        // background-color: papayawhip;
+        // &>*:not(:first-child){
+         
+        // }
+    }
+}
+.cardbox{
+    width: 30%;
+    height: auto;
+    padding-bottom: 2rem;
+    background-color:white;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.17);
+    &-content{
+        width: 100%;
+        height: auto;
+        &>img{
+            width: 100%;
+            height: 35vh;
+            border-top-left-radius:1rem;
+            border-top-right-radius:1rem;
+        }
+        &>h1{
+            margin-top: 1rem;
+            width: 90%;
+            margin: auto;
+            // margin-left: 1rem;
+            font-weight: 600;
+font-size: 25px;
+line-height: 45px;
+/* identical to box height */
+color: #49516F;
+        }
+        &>p{
+            width: 90%;
+            margin: auto;
+            font-weight: 400;
+font-size: 1.2rem;
+// margin-bottom: 2rem;
+        }
+    }
+}
