@@ -8,6 +8,10 @@ import Heart from '../../assets/bodyAssets/heart.png';
 import Checklist from '../../assets/bodyAssets/checklist.jpg';
 import Background from '../../assets/bodyAssets/background.jpg';
 import Guest from '../../assets/bodyAssets/guest.jpg';
+import Img1 from '../../assets/bodyAssets/Image1.png';
+import Img2 from '../../assets/bodyAssets/image2.png';
+import Img3 from '../../assets/bodyAssets/image3.png';
+import Arrow from '../../assets/bodyAssets/arrow.png';
 const Body = () => {
   return (
     <>
@@ -81,6 +85,20 @@ const Body = () => {
         Sptag="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
         />
 
+<div className='card2-container'>
+    <div className='card2-container-content'>
+<Card2 />
+<Card2 />
+<Card2 />
+    </div>
+</div>
+
+
+<Heartcomp 
+        Ptag="2021 Couple's Choice Awards"
+        Sptag="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        />
+
     </>
   )
 }
@@ -130,6 +148,30 @@ const Card1=()=>{
                 <img src={Background} alt="photo" />
                 <h1>Title</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
+            </div>
+        </div>
+    )
+}
+
+const Card2=()=>{
+    return(
+        <div className='multiImg-card'>
+            <div className='multiImg-card-content'>
+                <div className='multiImg-card-content-1'>
+                    <img src={Img1} alt="Img1" />
+                </div>
+                <div className='multiImg-card-content-2'>
+                    <img src={Img2} alt="Img2" />
+                    <img src={Img3} alt="Img3" />
+                    <img src={Img2} alt="Img2" />
+                </div>
+                <div className='multiImg-card-content-3'>
+                    <div className='multiImg-card-content-3-content'>
+                        <h1>Raj & Kumari</h1>
+                        <p>Columbo, Srilanka</p>
+                    </div>
+                 <img src={Arrow} alt="arrow" />
+                </div>
             </div>
         </div>
     )
