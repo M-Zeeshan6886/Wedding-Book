@@ -12,6 +12,10 @@ import Img1 from '../../assets/bodyAssets/Image1.png';
 import Img2 from '../../assets/bodyAssets/image2.png';
 import Img3 from '../../assets/bodyAssets/image3.png';
 import Arrow from '../../assets/bodyAssets/arrow.png';
+import Bg1ph from '../../assets/bodyAssets/bg1.jpg';
+import Bg2ph from '../../assets/bodyAssets/bg2.jpg';
+import Bg3ph from '../../assets/bodyAssets/bg3.jpg';
+
 const Body = () => {
   return (
     <>
@@ -99,6 +103,20 @@ const Body = () => {
         Sptag="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
         />
 
+<div className='bg-cards'>
+    <div className='bg-cards-content'>
+<BgCards  backgroundImage={Bg1ph}/>
+<BgCards  backgroundImage={Bg2ph} />
+<BgCards backgroundImage={Bg3ph} />
+    </div>
+</div>
+
+<Heartcomp 
+        Ptag="Join The Conversation"
+        Sptag="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        />
+
+
     </>
   )
 }
@@ -173,6 +191,22 @@ const Card2=()=>{
                  <img src={Arrow} alt="arrow" />
                 </div>
             </div>
+        </div>
+    )
+}
+
+
+
+const BgCards=(props)=>{
+    return(
+        <div className='bgcards-container' style={{
+           backgroundImage: `linear-gradient(180deg, rgba(109, 109, 109, 0) 0%, rgba(34, 34, 34, 0.7) 100%),url(${props.backgroundImage})`
+          }}>
+        <div className='bgcards-container-content'>
+            <button>Photography</button>
+            <h1>Wedding Tips For Fashion</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
         </div>
     )
 }

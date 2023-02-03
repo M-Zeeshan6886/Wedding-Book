@@ -65,7 +65,7 @@ line-height: 45px;
         // background-color: aqua;
         &>p{
             font-weight: 600;
-font-size: 44px;
+font-size: 4rem;
 line-height: 75px;
 text-align: center;
 color: #434343;
@@ -265,6 +265,58 @@ color: #6C6C6C;
                 width: 10%;
                 height: 5vh;
             }
+        }
+    }
+}
+
+.bg-cards{
+    width: 100%;
+    height: auto;
+    padding: .5rem 0rem;
+    background-color: $bodyback;
+    &-content{
+        width: 95%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem 0rem;
+        // background-color: plum;
+    }
+}
+
+
+.bgcards-container{
+    width: 30%;
+    height: 65vh;
+    border-radius: 1rem;
+    display: flex;
+    background-image: linear-gradient(180deg, rgba(109, 109, 109, 0) 0%, rgba(34, 34, 34, 0.7) 100%);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    &-content{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 3rem;
+        // background-color: lightcyan;
+        &>button{
+            padding: 1rem 2.5rem;
+            border-radius: 2rem;
+            border: none;
+            background-color: #F9556E;
+            color: white;
+        }
+        &>h1{
+            margin-top: 1rem;
+            color: white;
+            font-size: 2.4rem;
+        }
+        &>p{
+            margin-top: .5rem;
+            font-size:1.5rem ;
+            color: white;
         }
     }
 }
