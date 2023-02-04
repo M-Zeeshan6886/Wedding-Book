@@ -434,3 +434,37 @@ color: #F9556E;
         }
     }
 }
+
+.destination-container{
+    width: 100%;
+    height:auto;
+    padding: .5rem 0rem ;
+    background-color: $bodyback;
+    &-content{
+        width: 95%;
+        height: auto;
+        margin: auto;
+        padding: .5rem 0rem;
+        display: flex;
+        justify-content: space-between;
+        // background-color: peachpuff;
+    }
+}
+
+.destination{
+    width: 20%;
+    height: 50vh;
+    padding: .5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: peru;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    &>h1{
+        font-weight: 500;
+font-size: 3.5rem;
+color: #FFFFFF;
+    }
+}

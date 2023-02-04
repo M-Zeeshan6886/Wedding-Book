@@ -18,6 +18,9 @@ import Bg3ph from '../../assets/bodyAssets/bg3.jpg';
 import Elipse from '../../assets/bodyAssets/Ellipse.png';
 import Ticon from '../../assets/bodyAssets/texticon.png';
 import Dilt from '../../assets/bodyAssets/dilt.png';
+import Desti1 from '../../assets/bodyAssets/desti1.jpg';
+import Desti2 from '../../assets/bodyAssets/desti2.jpg';
+import Desti3 from '../../assets/bodyAssets/desti3.jpg';
 
 const Body = () => {
   return (
@@ -125,6 +128,21 @@ const Body = () => {
 <TextCard />
 <TextCard />
 </div>
+</div>
+
+<Heartcomp 
+        Ptag="Plan your destination Wedding"
+        Sptag="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        />
+
+
+<div className='destination-container'>
+    <div className='destination-container-content'>
+   <Desination  backgroundImage={Desti1}/>
+   <Desination  backgroundImage={Desti2}/>
+   <Desination  backgroundImage={Desti3}/>
+   <Desination  backgroundImage={Desti1}/>
+    </div>
 </div>
 
     </>
@@ -248,6 +266,21 @@ const TextCard=()=>{
                     </div>
                 </div>
             </div>
+        </div>
+    )
+}
+
+const Desination=(props)=>{
+    return(
+
+        <div className='destination'
+        style={{
+           backgroundImage: `linear-gradient(180deg, rgba(31, 31, 31, 0.449) 0%, rgba(25, 25, 25, 0.597) 100%),
+           url(${props.backgroundImage})`
+          }}
+        >
+            <h1>Turkey</h1>
+
         </div>
     )
 }
