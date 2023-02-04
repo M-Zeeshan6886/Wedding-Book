@@ -320,3 +320,117 @@ color: #6C6C6C;
         }
     }
 }
+
+.textcard-container{
+    width: 100%;
+    height: auto;
+    padding: .5rem 0rem;
+    background-color: $bodyback;
+    &-content{
+        width: 95%;
+        height: auto;
+        margin: auto;
+        padding: .5rem 0rem;
+        display: flex;
+        justify-content: space-between;
+        // background-color: plum;
+    }
+}
+
+
+.textcard{
+    width: 30%;
+    height: auto;
+    padding: .5rem 0rem;
+    // background-color: lightcyan;
+    
+    &-content{
+        width: 100%;
+        height: auto;
+        background-color: white;
+       border-radius:1rem;
+        &-1{
+            padding: 1.2rem 0rem;
+           width: 90%;
+           margin: auto;
+        //    background-color: papayawhip;
+            &>h1{
+                font-weight: 500;
+font-size: 2.4rem;
+color: #49516F;
+            }
+            &>p{
+                margin-top: 1.5rem;
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 25px;
+                color: #000000;
+                margin-bottom: 1rem;
+            }
+            &>span{
+                // background-color: peachpuff;
+                // margin-top: 2rem;
+                font-weight: 500;
+font-size: 1.3rem;
+color: #F9556E;
+            }
+        }
+        &-2{
+            width: 100%;
+            height: auto;
+            padding: 1.5rem 0rem;
+
+            background-color: $pink;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+           &-content{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // background-color: green;
+            &-left{
+                display: flex;
+                align-items: center;
+                &>img{
+                    width: 22%;
+                }
+                &>p{
+                    margin-left: 1rem;
+                    font-weight: 500;
+                    font-size: 1.4rem; 
+                    color: #FFFFFF;
+                }
+            }
+            &-midle{
+                display: flex;
+                align-items: center;
+                &>img{
+                    width: 35%;
+                }
+                &>p{
+                    margin-left: 1rem;
+                    font-weight: 500;
+                    font-size: 1.4rem; 
+                    color: #FFFFFF;
+                }
+            }
+            &-right{
+                margin-right: 2.5rem;
+                display: flex;
+                align-items: center;
+                &>img{
+                    width: 35%;
+                }
+                &>p{
+                    margin-left: 1rem;
+                    font-weight: 500;
+                    font-size: 1.4rem; 
+                    color: #FFFFFF;
+                }
+            }
+           }
+        }
+    }
+}

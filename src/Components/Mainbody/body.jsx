@@ -15,6 +15,9 @@ import Arrow from '../../assets/bodyAssets/arrow.png';
 import Bg1ph from '../../assets/bodyAssets/bg1.jpg';
 import Bg2ph from '../../assets/bodyAssets/bg2.jpg';
 import Bg3ph from '../../assets/bodyAssets/bg3.jpg';
+import Elipse from '../../assets/bodyAssets/Ellipse.png';
+import Ticon from '../../assets/bodyAssets/texticon.png';
+import Dilt from '../../assets/bodyAssets/dilt.png';
 
 const Body = () => {
   return (
@@ -116,6 +119,13 @@ const Body = () => {
         Sptag="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
         />
 
+<div className='textcard-container'>
+<div className='textcard-container-content'>
+<TextCard />
+<TextCard />
+<TextCard />
+</div>
+</div>
 
     </>
   )
@@ -207,6 +217,37 @@ const BgCards=(props)=>{
             <h1>Wedding Tips For Fashion</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
         </div>
+        </div>
+    )
+}
+
+
+const TextCard=()=>{
+    return(
+        <div className='textcard'>
+            <div className='textcard-content'>
+                <div className='textcard-content-1'>
+                    <h1>Wedding Insurance</h1>
+                    <p>Lorem Ipsum is simply dummy text of theprinting and typesetting industry. Lorem psum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. </p>
+                    <span>Today at 12:12PM</span>
+                </div>
+                <div className='textcard-content-2'>
+                    <div className='textcard-content-2-content'>
+                    <div className='textcard-content-2-content-left'>
+                        <img src={Elipse} alt="profile" />
+                        <p>John Doe</p>
+                    </div>
+                    <div className='textcard-content-2-content-midle'>
+                        <img src={Ticon} alt="texticone" />
+                        <p>22</p>
+                    </div>
+                    <div className='textcard-content-2-content-right'>
+                        <img src={Dilt} alt="heart" />
+                        <p>20</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
