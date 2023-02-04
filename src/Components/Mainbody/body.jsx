@@ -145,7 +145,12 @@ const Body = () => {
     </div>
 </div>
 
-    </>
+<div className='venues-container'>
+    <div className='venues-container-content'>
+    <Venues backgroundImage={Desti3} />
+    </div>
+    </div>
+</>
   )
 }
 
@@ -281,6 +286,94 @@ const Desination=(props)=>{
         >
             <h1>Turkey</h1>
 
+        </div>
+    )
+}
+
+const Venues=(props)=>{
+    return(
+        <div className='venues'>
+            <div className='venues-content'>
+                <h1>Search by Category to Find Your Wedding Suppliers</h1>
+                <div className='venues-content-part2'>
+                    <div className='venues-content-part2-left'>
+                    <div className="venues-content-part2-left-1"
+                    style={{
+           backgroundImage: `linear-gradient(180deg, rgba(31, 31, 31, 0.449) 0%, rgba(25, 25, 25, 0.597) 100%),
+           url(${props.backgroundImage})`
+          }}>
+            <p>Wedding Venues</p>    
+                    </div>
+                    <div className="venues-content-part2-left-2">
+                        <div className="venues-content-part2-left-2-box"></div>
+                    <div className='venues-content-part2-left-2-content'>
+                        <div className='venues-content-part2-left-2-content-left'>
+                            <p>Barn Wedding</p>
+                            <p>Country Wedding</p>
+                            <p>Unique Wedding</p>
+                            <p>Castle Wedding</p>
+                            <p>Historic Wedding</p>
+                            <p>Small Hotel Wedding</p>
+                            <p>Vineyard Wedding</p>
+                            <p>City Wedding</p>
+                            <p>Sporting</p>
+                            <p>City Wedding</p>
+                        </div>
+                        <div className='venues-content-part2-left-2-content-right'>
+                            <p>Barn Wedding</p>
+                            <p>Country Wedding</p>
+                            <p>Unique Wedding</p>
+                            <p>Castle Wedding</p>
+                            <p>Historic Wedding</p>
+                            <p>Small Hotel Wedding</p>
+                            <p>Vineyard Wedding</p>
+                            <p>City Wedding</p>
+                            <p>Sporting</p>
+                            <p>City Wedding</p>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                <div className='venues-content-part2-left'>
+                    <div className="venues-content-part2-left-1"
+                    style={{
+           backgroundImage: `linear-gradient(180deg, rgba(31, 31, 31, 0.449) 0%, rgba(25, 25, 25, 0.597) 100%),
+           url(${props.backgroundImage})`
+          }}>
+            <p>Wedding Venues</p>    
+                    </div>
+                    <div className="venues-content-part2-left-2">
+                        <div className="venues-content-part2-left-2-box"></div>
+                    <div className='venues-content-part2-left-2-content'>
+                        <div className='venues-content-part2-left-2-content-left'>
+                            <p>Barn Wedding</p>
+                            <p>Country Wedding</p>
+                            <p>Unique Wedding</p>
+                            <p>Castle Wedding</p>
+                            <p>Historic Wedding</p>
+                            <p>Small Hotel Wedding</p>
+                            <p>Vineyard Wedding</p>
+                            <p>City Wedding</p>
+                            <p>Sporting</p>
+                            <p>City Wedding</p>
+                        </div>
+                        <div className='venues-content-part2-left-2-content-right'>
+                            <p>Barn Wedding</p>
+                            <p>Country Wedding</p>
+                            <p>Unique Wedding</p>
+                            <p>Castle Wedding</p>
+                            <p>Historic Wedding</p>
+                            <p>Small Hotel Wedding</p>
+                            <p>Vineyard Wedding</p>
+                            <p>City Wedding</p>
+                            <p>Sporting</p>
+                            <p>City Wedding</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
     )
 }
