@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './NavBar.scss';
 import Logo from '../../assets/NvAssets/logo.png';
 import Dil from '../../assets/NvAssets/dil.png';
 import Polygon from '../../assets/NvAssets/polygon.png';
 import Search from '../../assets/NvAssets/search.png';
+import {GiHamburgerMenu} from 'react-icons/gi';
+import {IoMdClose} from 'react-icons/io';
 
 const NavBar = () => {
+    const [sidebar, setSidebar]= useState(false);
+    const showSidebar = () => setSidebar(!sidebar);
   return (
     <>
     <div className='bar-container'>
@@ -28,6 +32,47 @@ const NavBar = () => {
     </div>
     </div>
 
+
+{/* //Responsive NavbarView */}
+
+<div className='responsive-bar'>
+    <div className='responsive-bar-content'>
+     <img src={Logo} alt="logo" />
+     {sidebar ? (<IoMdClose  className='berguricon'  onClick={showSidebar}/>
+     ) 
+     : (<GiHamburgerMenu className='berguricon' onClick={showSidebar} />) }
+     
+    </div>
+</div>
+
+{/* Responsive container */}
+ {sidebar &&  <div className='responsive-container'>
+    <div className='responsive-container-content'>
+        <div className='responsive-container-content-btns'>
+        <button>PLANNING TOOLS</button>
+        <button>VENUES</button>
+        <button>SUPPLIERS</button>
+        <button>DRESSES</button>
+        <button>IDEAS</button>
+        <button>FORUMS</button>
+        <button>GIFT LIST</button>
+        <button>STATIONARY</button>
+        </div>
+    </div>
+    <div className='responsive-container-content-two'>
+    <div className='responsive-container-content-two-btns'>
+        <button>LOG IN</button>
+        <button>SIGN UP</button>
+    </div>
+    </div>
+</div>
+}
+
+
+
+
+
+
     <div className="subheader-container">
         <div className='subheader-container-content'>
             <div className='subheader-container-content-left'>
@@ -47,6 +92,10 @@ const NavBar = () => {
             </div>
         </div>
     </div>
+
+
+
+
 
     </>
   )
