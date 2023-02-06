@@ -22,6 +22,7 @@ import Desti1 from '../../assets/bodyAssets/desti1.jpg';
 import Desti2 from '../../assets/bodyAssets/desti2.jpg';
 import Desti3 from '../../assets/bodyAssets/desti3.jpg';
 
+
 const Body = () => {
   return (
     <>
@@ -150,6 +151,10 @@ const Body = () => {
     <Venues backgroundImage={Desti3} />
     </div>
     </div>
+
+
+
+
 </>
   )
 }
@@ -377,3 +382,5 @@ const Venues=(props)=>{
         </div>
     )
 }
+
+

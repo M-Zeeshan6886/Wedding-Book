@@ -97,6 +97,9 @@ color: #FFFFFF;
   
         // padding: .3rem 0rem ;
         // background-color: white;
+        @include respond (phone){
+            width: 100%;
+        }
         &-content{
             width: 100%;
             height: auto;
@@ -128,5 +131,8 @@ color: #FFFFFF;
 font-size: 14px;
 line-height: 27px;
 color: $pink;
+@include respond(phone){
+    font-size: 1.3rem;
+}
     }
 }
